@@ -1,0 +1,32 @@
+<%- include("partial/header") -%>
+
+
+<div class="weather">
+    <div class="header">
+        <span>Weather Report</span>
+    </div>
+    <hr>
+    <form method="post" id="form">
+        <input type="text" name="weather" id="weather">
+        <button type="submit" id="btn1"><i class='bx bx-search'></i></button>
+    </form>
+    <div class="info">
+        <div class="image">
+            <img src= <%=icon %> >
+        </div>
+        <div class="wind">
+            <span class="speed">wind: <%=windM%>mph/ <%=windK%>Kmph</span><br>
+            <span class="speed">feels like: <%=feelC%>°C/<%=feelF%>°F </span><br>
+            <span class="speed">Humidity: <%=hum%>% </span>
+        </div>
+    </div>
+    <div class="forecast">
+        <div class="temp">
+            <span class="city"><%= city %></span><br>
+            <span class="degree"><%=degC%>°C /<%=degF%>°F </span><br>
+            <span class="desc"><%=con%></span>
+        </div>
+    </div>
+</div>
+
+<%- include("partial/footer") -%>

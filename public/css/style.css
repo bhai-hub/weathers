@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root{
+    --background1: #Oc152b;
+    --color1: #2baaff;
+    --color2: #8302fc;
+    --color3: #ff0a99;
+    --color4: #3C344C;
+}
+
+body{
+    background-color: var(--color1);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.weather{
+    background-color: var(--color3);
+    margin: auto;
+    margin-top: 30px;
+    width: 400px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    box-shadow: 6px 6px 6px 6px var(--color4);
+}
+
+.header{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#form{
+    margin: 10px;
+}
+
+#weather{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    padding: 11px;
+    padding-left: 15px;
+    width: 250px;
+    border: none;
+    border-radius: 40px 0 0 40px;
+    
+}
+
+#btn1{
+    height: 40px;
+    width: 50px;
+    border-radius: 0 40px 40px 0;
+    margin-left: -3.9px;
+    border: none;
+    position: relative;
+    top: -4.25px;
+    background-color: rgb(255, 255, 255);
+}
+
+#btn1:hover{
+    color: white;
+    background-color: var(--color2);
+}
+
+.bx:hover{
+    color: white;
+}
+
+.bx{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+
+.city{
+    font-size: 35px;
+}
+
+.degree{
+    font-size: 25px;
+}
+
+.desc{
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.image{
+    margin-right: 10px;
+    width: 100%;
+}
+.image>img{
+    height: 100px;
+}
+
+.wind{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+footer{
+    margin-top: 100px;
+
+}
+
+footer>span{
+    color: black;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .weather{
+        width: 300px;
+    }
+
+    #weather{
+        width: 200px;
+    }
+    
+}
+/*
+#OC152B
+#0C1735
+#1C2657
+#0C1A54
+#3C344C
+
+rainbow-text:-
+
+background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+*/
